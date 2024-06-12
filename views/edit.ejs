@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900  text-white px-5 py-5 center relative">
+       <div class="text-right px-3">
+            <a  class="text-xl bg-yellow-600 rounded-lg  p-1 border-blue-500  " href="/">Home</a>
+       </div>
+        <div class="form px-10  py-10">
+                <form action="/edit" method="post">
+                    <input type="text" class="block mx-5  text-zinc-500 w-80 h-10 rounded-md p-3 outline-none bg-zinc-800"
+                        placeholder="Previous Name" name="Previous" value="<%= filename %>" >
+                    <input class="block mx-5 my-5  w-80 h-15 rounded-md p-3 outline-none bg-zinc-800"
+                        placeholder="New Name" name="new"></input>
+                    <input type="submit" class="bg-blue-400  ml-5 px-3 py-2 rounded-md" value="Update">
+                </form>
+            </div>
+        
+    </div>
+</body>
+
+</html>
